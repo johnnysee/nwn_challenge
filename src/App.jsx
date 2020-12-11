@@ -4,7 +4,6 @@ import { Container, Menu, Header, Image } from 'semantic-ui-react'
 import NewsIndex from './components/NewsIndex'
 import logo from './nwn.png'
 
-
 const App = () => {
   return (
     <>
