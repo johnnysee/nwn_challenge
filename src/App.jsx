@@ -18,7 +18,6 @@ const App = () => {
         </Menu.Menu>
       </Menu>
       <Container>
-
         <Header as='h2' >
           News Wire Network
           </Header>
