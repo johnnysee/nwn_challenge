@@ -1,7 +1,7 @@
 describe('Visitor Can See A Collection Of News', () => {
   beforeEach(() => {
     cy.server()
-    cy.route('GET', "**/top-headlines**", "fx:news_index.json")
+    cy.route('GET', "**/top-headlines**country=se", "fx:news_index.json")
     cy.visit('/')
     cy.get("[data-cy='news-section']").as('newsSection')
   });

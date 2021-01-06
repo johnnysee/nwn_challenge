@@ -7,12 +7,12 @@ function getNewsFeed(data) {
 const apiUrl = process.env.REACT_APP_API_URL
 const apiKey = process.env.REACT_APP_API_KEY
 const NewsService = {
-  async index() {
+  async index(countryCode) {
     const result = await axios.get(
       apiUrl + "/top-headlines",
       {
         params:
-          { apiKey: apiKey, country: 'se' }
+          { apiKey: apiKey, country: countryCode }
       }
     )
     store.dispatch(getNewsFeed(result.data.articles))
