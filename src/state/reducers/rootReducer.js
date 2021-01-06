@@ -1,4 +1,4 @@
-const rootReducer = (state = { newsFeed: [] }, action) => {
+const rootReducer = (state, action) => {
 
   switch (action.type) {
     case "SET_NEWS_FEED":
