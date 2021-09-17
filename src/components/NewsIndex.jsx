@@ -23,6 +23,7 @@ const NewsIndex = () => {
       <div id='news-item'>
       <h1>{article.title}</h1>
       <img src={article.urlToImage}></img>
+      <p id="news-description">{article.description}</p>
       </div>
     )
   })

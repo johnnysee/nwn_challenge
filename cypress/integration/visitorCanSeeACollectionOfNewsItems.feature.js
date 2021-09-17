@@ -16,4 +16,10 @@ describe("user visits the application", () => {
       cy.get('img').should('be.visible')
     });
   });
+
+  it('is expected to display description for each news', () => {
+    cy.get("#news-item").within(() => {
+      cy.get('#news-description').should('be.visible')
+    })
+  });
 });
