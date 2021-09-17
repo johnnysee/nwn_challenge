@@ -27,9 +27,7 @@ describe("user visits the application", () => {
     cy.get("#news-search").should("be.visible");
   });
 
-  it('is expected to direct to a link', () => {
-    cy.get("#news-item").within(() => {
-      cy.get("iframe").should('have.attr', 'href')
-    })
+  it("is expected to direct to a link", () => {
+    cy.get("#news-item").should("have.attr", "href");
   });
 });
