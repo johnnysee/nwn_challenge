@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import NewsCard from "./NewsCard";
 import axios from "axios";
 
@@ -20,7 +20,10 @@ const NewsIndex = () => {
 
   const newsList = news.map((article) => {
     return (
+      <div id='news-item'>
       <h1>{article.title}</h1>
+      <img src={article.urlToImage}></img>
+      </div>
     )
   })
 
