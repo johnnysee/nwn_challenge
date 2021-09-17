@@ -20,9 +20,7 @@ const NewsIndex = () => {
 
   const newsList = news.map((article) => {
     return (
-      <div id="news-item">
         <NewsCard props={article} />
-      </div>
     );
   });
 

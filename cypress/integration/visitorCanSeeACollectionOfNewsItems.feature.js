@@ -13,13 +13,17 @@ describe("user visits the application", () => {
 
   it("is expected to display an image", () => {
     cy.get("#news-item").within(() => {
-      cy.get('img').should('be.visible')
+      cy.get("img").should("be.visible");
     });
   });
 
-  it('is expected to display description for each news', () => {
+  it("is expected to display description for each news", () => {
     cy.get("#news-item").within(() => {
-      cy.get('#news-description').should('be.visible')
-    })
+      cy.get(".description").should("be.visible");
+    });
+  });
+
+  it("is expected to have search functionality", () => {
+    cy.get("#news-search").should("be.visible");
   });
 });
