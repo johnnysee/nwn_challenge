@@ -8,6 +8,6 @@ describe('user visits the application', () => {
   })
 
   it('is expected to display 4 headlines', () => {
-    cy.get('#news-index').children().should('have.length', 4)
+    cy.get('#news-index').children().should('have.length', 20)
   });
 })

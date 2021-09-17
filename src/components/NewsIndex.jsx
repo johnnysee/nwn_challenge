@@ -18,9 +18,16 @@ const NewsIndex = () => {
     fetchData();
   }, []);
 
+  const newsList = news.map((article) => {
+    return (
+      <h1>{article.title}</h1>
+    )
+  })
+
   return (
     <>
       <NewsCard />
+      <div id="news-index">{newsList}</div>
     </>
   );
 };
