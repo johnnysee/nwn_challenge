@@ -20,17 +20,17 @@ const NewsIndex = () => {
 
   const newsList = news.map((article) => {
     return (
-      <div id='news-item'>
-      <h1>{article.title}</h1>
-      <img src={article.urlToImage}></img>
-      <p id="news-description">{article.description}</p>
+      <div id="news-item">
+        <NewsCard props={article} />
+        <h1>{article.title}</h1>
+        <img src={article.urlToImage}></img>
+        <p id="news-description">{article.description}</p>
       </div>
-    )
-  })
+    );
+  });
 
   return (
     <>
-      <NewsCard />
       <div id="news-index">{newsList}</div>
     </>
   );
