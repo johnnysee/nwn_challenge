@@ -22,9 +22,6 @@ const NewsIndex = () => {
     return (
       <div id="news-item">
         <NewsCard props={article} />
-        <h1>{article.title}</h1>
-        <img src={article.urlToImage}></img>
-        <p id="news-description">{article.description}</p>
       </div>
     );
   });
