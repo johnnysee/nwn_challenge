@@ -5,6 +5,7 @@ const NewsCard = ({ props }) => {
   const publishedAt = new Date(props.publishedAt).toDateString()
   return (
     <Card id="news-item"
+      href={props.url}
       image={props.urlToImage}
       header={props.title}
       meta={`By: ${props.author} at ${props.source.name}`}
