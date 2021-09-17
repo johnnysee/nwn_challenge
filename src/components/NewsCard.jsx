@@ -5,8 +5,6 @@ import axios from 'axios'
 const API_KEY = process.env.REACT_APP_API_KEY
 const API_URL = `https://newsapi.org/v2/everything?q=tesla&from=2021-08-17&sortBy=publishedAt&apiKey=${API_KEY}`
 
-
-
 const NewsCard = (props) => {
   return (
     <Card
