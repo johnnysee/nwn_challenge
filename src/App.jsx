@@ -6,6 +6,7 @@ import logo from './nwn.png'
 
 
 const App = () => {
+  
   return (
     <>
       <Menu style={{ borderRadius: 0, background: '' }}>
