@@ -16,6 +16,7 @@ const App = () => {
         <Menu.Item>
           <Image src={logo} size="tiny" centered />
         </Menu.Item>
+        <Header as="h2" textAlign="center">News Wire Network - News From Around the World</Header>
         <Menu.Menu position="right">
           <Menu.Item>
             <NewsSearch childToParent={childToParent} />
@@ -23,8 +24,6 @@ const App = () => {
         </Menu.Menu>
       </Menu>
       <Container>
-        <Header as="h2">News Wire Network</Header>
-        <p>News from around the world</p>
         <p>{search}</p>
         <NewsIndex props={search}/>
       </Container>

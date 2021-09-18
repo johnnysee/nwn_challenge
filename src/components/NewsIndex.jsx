@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-// import { useSelector } from "react-redux";
 import NewsCard from "./NewsCard";
 import axios from "axios";
+import { Grid } from "semantic-ui-react"
 
 const NewsIndex = ({ props }) => {
   const [news, setNews] = useState([]);
@@ -24,7 +24,8 @@ const NewsIndex = ({ props }) => {
 
   return (
     <>
-      <div id="news-index">{newsList}</div>
+      <Grid id="news-index">
+      <Grid.Row>{newsList}</Grid.Row></Grid>
     </>
   );
 };

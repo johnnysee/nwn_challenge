@@ -1,9 +1,10 @@
 import React from "react";
-import { Header, Card } from "semantic-ui-react";
+import { Header, Card} from "semantic-ui-react";
 
 const NewsCard = ({ props }) => {
   const publishedAt = new Date(props.publishedAt).toDateString()
   return (
+    
     <Card id="news-item"
       href={props.url}
       image={props.urlToImage}
@@ -12,6 +13,7 @@ const NewsCard = ({ props }) => {
       description={props.description}
       extra={<Header as="h6">Published at {publishedAt}</Header>}
     />
+  
   );
 };
 
